@@ -8,9 +8,12 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+   
   ],
   providers: [],
+  //This is where app knows where to go get the component and load the html.
+  //AppComponent is found in ./app.component
   bootstrap: [AppComponent]
 })
 export class AppModule { }
