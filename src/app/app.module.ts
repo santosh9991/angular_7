@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-
+import { FormsModule } from '@angular/forms'; 
 import { AppComponent } from './app.component';
 import {ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component'
@@ -12,7 +12,7 @@ import { ServersComponent } from './servers/servers.component'
   ],
   imports: [
     BrowserModule,
-   
+    FormsModule 
   ],
   providers: [],
   //This is where app knows where to go get the component and load the html.
