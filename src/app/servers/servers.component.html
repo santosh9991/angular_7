@@ -22,8 +22,7 @@ class="forn-control"
   <p>No server was created</p>
 </ng-template>
 
-<app-server><</app-server>
-<app-server><</app-server>
+<app-server *ngFor= "let server of servers"></app-server>
 
 <!-- <p> We used all kinds of data binding:</p>
     <ul>

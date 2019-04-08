@@ -9,7 +9,13 @@ import { Component } from '@angular/core'
     //selecter:html tag which you are going to use later in app. It should be string, unique
     {selector : 'app-server',
     //relative path should be specified
-    templateUrl:'./server.component.html'
+    templateUrl:'./server.component.html',
+    styles:[`
+        .online{
+            color:white;
+        }
+        `
+    ]
     })
 export class ServerComponent{
     serverId = 10;
@@ -19,5 +25,8 @@ export class ServerComponent{
     }
     getServerStatus(){
         return this.serverStatus;
+    }
+    getColor(){
+        return this.serverStatus==="online"?"blue":"red";
     }
 }
