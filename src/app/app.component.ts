@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
 })
 //Here we load the core component object and selector is available to index.html
 export class AppComponent {
-  
+  feature:string;
+  features(featureValue:string){
+        this.feature=featureValue
+        console.log("app component",featureValue)
+  }
+
 }
 

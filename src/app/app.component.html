@@ -1,11 +1,18 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <!-- <h3>This is Root component</h3> -->
-<app-header></app-header>
+<!--
+    featureSelected is the custom event created by us to listen in the parent component of the header.
+    We use @Output() to make the event listoner available to the app component.
+    When ever a click event is fired on recipe on the header, it calls onSelect function, which intern passes the value to the 
+    custom event emitter we created. 
+    
+-->
+<app-header (featureSelected)="features($event)"></app-header>
 <div class="container">
     <div class="row">
         <div class="col-mod-12">
-            <app-recipes></app-recipes>
-            <app-shopping-list></app-shopping-list>
+            <app-recipes *ngIf="feature==='recipe'"></app-recipes>
+            <app-shopping-list *ngIf="feature!=='recipe'"></app-shopping-list>
         </div>
     </div>
 </div>
