@@ -6,13 +6,13 @@ import { Recipe } from './recipe.model';
   templateUrl: './recipes.component.html',
   styleUrls: ['./recipes.component.css']
 })
-export class RecipesComponent implements OnInit,ngAfterViewInit {
+export class RecipesComponent implements OnInit {
   @Output() selectedRecipe:Recipe;
   constructor() { }
 
   ngOnInit() {
   }
-  ngAfterViewInit(){
-    console.log("selectedRecipe",this.selectedRecipe)
-  }
+  // ngAfterViewInit(){
+  //   console.log("selectedRecipe",this.selectedRecipe)
+  // }
 }
