@@ -1,3 +1,15 @@
+
+<!--
+    ngStyle is a built in angular directive which gets applied based on boolian value returned to the 
+    backgroundColor property
+    ngStyle alows us to dynamically allows us to change the style
+    ngClass allows us to dynamically add or remove the class
+    ngStyle byitself is not useful unless it is configured, i.e we use property binding on this direcive.[] around 
+    ngStyle indicate that we want to bind to property of the directive.
+    It expect to get a js object and here we define key valiue pairs of style name and the value of the style as value
+
+-->
 <p 
 [ngStyle]="{backgroundColor:getColor()}"
+
 [ngClass]="{online:serverStatus==='online'}">Server with ID {{serverId}} is {{getServerStatus()}}</p>
