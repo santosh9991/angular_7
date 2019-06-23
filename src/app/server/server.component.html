@@ -3,11 +3,14 @@
     ngStyle is a built in angular directive which gets applied based on boolian value returned to the 
     backgroundColor property
     ngStyle alows us to dynamically allows us to change the style
-    ngClass allows us to dynamically add or remove the class
+    
     ngStyle byitself is not useful unless it is configured, i.e we use property binding on this direcive.[] around 
     ngStyle indicate that we want to bind to property of the directive.
     It expect to get a js object and here we define key valiue pairs of style name and the value of the style as value
+    ngClass allows us to dynamically add or remove the class
 
+    ngClass takes a js object with keys are css class names. keys(css classes) are called when the expression assigned to these 
+    classes evaluates to true. Values are conditions determining whether this class is attached or not
 -->
 <p 
 [ngStyle]="{backgroundColor:getColor()}"

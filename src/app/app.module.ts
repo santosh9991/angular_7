@@ -9,16 +9,23 @@ import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.com
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component'
+import { ServersComponent } from './servers/servers.component';
+import { ServerComponent } from './server/server.component';
 @NgModule({
+  /*
+  ngModel is a decorator which is a angular core feature
+  */
   declarations: [
     AppComponent,
+    ServersComponent,
+    ServerComponent,
     HeaderComponent,
-    RecipesComponent,
-    RecipeListComponent,
-    RecipeDetailComponent,
-    RecipeItemComponent,
-    ShoppingListComponent,
-    ShoppingEditComponent
+    // RecipesComponent,
+    // RecipeListComponent,
+    // RecipeDetailComponent,
+    // RecipeItemComponent,
+    // ShoppingListComponent,
+    // ShoppingEditComponent
   ],
   imports: [
     BrowserModule,
